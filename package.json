@@ -9,8 +9,8 @@
     "type-check": "vue-tsc --noEmit",
     "build-only": "vite build",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "pub:staging": "cross-env CURRENT_ENV=staging node ./scripts/publish.js",
-    "pub:prod": "cross-env CURRENT_ENV=production node ./scripts/publish.js"
+    "pub:staging": "cross-env CURRENT_ENV=staging node ./scripts/publish.ts",
+    "pub:prod": "cross-env CURRENT_ENV=production node ./scripts/publish.ts"
   },
   "author": "Artoriasless",
   "license": "MIT",
