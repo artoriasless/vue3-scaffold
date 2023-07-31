@@ -1,0 +1,66 @@
+@import './scroller.scss';
+@import './fonts.scss';
+
+html,
+body {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: LiBian, Product-Sans, Arial, Microsoft YaHei, sans-serif;
+  background-color: #fff;
+}
+
+html * {
+  box-sizing: border-box;
+}
+
+@media (max-width: 374px) {
+  //>=375的设备
+  html {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 375px) {
+  //>=375的设备
+  html {
+    font-size: 24px;
+  }
+}
+@media (min-width: 768px) {
+  //>=768的设备
+  html {
+    font-size: 20px;
+  }
+}
+@media (min-width: 992px) {
+  //>=992的设备
+  html {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1200) {
+  //>=1200的设备
+  html {
+    font-size: 16px;
+  }
+}
+
+// 复写部分 element-plus 样式
+.el-message {
+  width: max-content;
+}
+
+html,
+body,
+#appContainer {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}

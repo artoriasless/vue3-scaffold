@@ -1,0 +1,17 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.node.json",
+  "include": [
+    "package.json",
+    "src/types",
+    "vite.config.*",
+    "vitest.config.*",
+    "cypress.config.*",
+    ".vite-config-piece/*"
+  ],
+  "exclude": ["bash/route-tpl", "bash/store-tpl", "bash/view-tpl", "lib"],
+  "compilerOptions": {
+    "allowJs": true,
+    "composite": true,
+    "types": ["node"]
+  }
+}
